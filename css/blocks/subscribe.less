@@ -1,0 +1,131 @@
+// main:../style.less
+
+.subscribe{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container_100{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe_col_left{
+    height: auto;
+    flex-basis: 50%;
+    display: block;
+
+    @media @mobile{
+        display: flex;
+        flex-basis: 100%;
+    }
+}
+
+.subscribe_img{
+    max-width: 100%;
+    height: auto;
+
+    @media @mobile{
+        margin: 0 auto;
+    }
+}
+
+.subscribe_col_right{
+    height: auto;
+    flex-basis: 50%;
+    display: block;
+
+    h1{
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+
+        @media @tablet{
+            font-size: 1.8rem;
+        }
+
+        @media @mobile{
+            text-align: center;
+        }
+    }
+
+    @media @notebook{
+        padding-left: 1rem;
+    }
+
+    @media @mobile{
+        flex-basis: 100%;
+        padding: 1rem;
+    }
+
+}
+
+.subscribe_text_big{
+    font-family: Playfair Display;
+    font-size: 1.33rem;
+    padding-bottom: 2rem;
+
+    @media @tablet{
+            font-size: 1.1rem;
+        }
+
+    @media @mobile{
+            text-align: center;
+        }
+}
+
+.subscribe_text_small{
+    font-family: Open Sans;
+    font-size: 0.93rem;
+    padding-bottom: 2rem;
+
+    @media @tablet{
+            font-size: 0.8rem;
+        }
+
+    @media @mobile{
+            text-align: center;
+        }
+}
+
+.subscribe_col_block{
+    display: block;
+    max-width: 480px;
+    margin: 0 auto;
+
+    @media @notebook{
+        padding: 2rem;
+    }
+
+    @media @tablet{
+        padding: 1.5rem;
+    }
+}
+
+.subscribe_form{
+    width: 100%;
+
+    @media @mobile{
+            text-align: center;
+        }
+}
+
+.subscribe_form-input{
+    border: 1px solid @gray;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+}
+
+.subscribe_form-button{
+    border: 1px solid @gray;
+    color: @white;
+    padding: 10px;
+    background-color: @blue;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}

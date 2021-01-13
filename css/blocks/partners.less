@@ -1,0 +1,38 @@
+// main:../style.less
+
+.partners{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.partners_cols{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partners_col{
+    display: block;
+    padding: 8rem 1.8rem;
+
+    h6{
+        font-size: 1.25rem;
+    }
+
+    @media @tablet{
+        padding: 6rem 4.7rem;
+    }
+
+    @media @mobile{
+        padding: 4rem 3.7rem 4rem 3.7rem;
+    }
+
+    @media @mobile-sm{
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        padding: 3rem 1rem;
+    }
+
+}
