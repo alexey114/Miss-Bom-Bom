@@ -23,7 +23,6 @@
     @media @mobile{
         display: none;
     }
-
 }
 
 .nav__link{
@@ -32,6 +31,11 @@
     color: @black;
     font-weight: 700;
     text-decoration: none;
+}
+
+.nav__link img{
+    width: 20px;
+    padding-top: -5px;
 }
 
 .header__info{
@@ -63,21 +67,25 @@
 
 //Burger_menu
 
-.section-btn{
-}
+//.section-btn{}
 
 .menu-btn span{
     margin: 10px;
-    display: block;
+    display: none;
     width: 50px;
     height: 50px;
-    position: relative;
+    
+    @media @mobile {
+        display: block;
+        flex-basis: 100%;
+        text-align: center;        
+    }
 }
 
 .menu-btn span,
 .menu-btn span::before,
 .menu-btn span::after{
-    position: absolute;
+    position: relative;
     top: 50%;
     margin-top: 1px;
     left: 50%;
@@ -112,4 +120,50 @@
 
 .menu-btn_active span:after {
     transform: rotate(-45deg);
+}
+
+//about_me
+.nav__link-logo{
+font-family: 'Montserrat',sans-serif;
+font-size: 28px;
+color: #1D1D1D;
+text-decoration: none;
+}
+
+.about_me-header h1{
+    text-align: center;
+    margin: 50px; 
+}
+
+.about_me-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px; 
+}
+
+.about_me-img{
+    flex-basis: 50%;
+    padding: 15px;
+    
+    @media @mobile {
+        flex-basis: 100%;
+        text-align: center;        
+    }
+}
+
+.about_me-img-foto{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+.about_me-text{
+    flex-basis: 50%;
+    padding: 15px;
+
+    @media @mobile {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
