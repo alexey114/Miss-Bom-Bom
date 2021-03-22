@@ -44,5 +44,3 @@ const CATALOG = [ // Создаем массив состоящих из объ�
 ];
 
 // imgbb.com - сервис для сохранения фото, так же сохранять фото можно в Git Hub
-
-//https://www.youtube.com/watch?v=aI2ZjquntDQ&list=PL7cTIfGFrdKn9lnGXEUWEXYdYp-HKGPAw&index=5
