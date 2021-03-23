@@ -1,5 +1,5 @@
 class Products {
-    render() { //Метод render отображает даные на странице
+    render() { //Метод render отображает данные на странице
         let htmlCatalog = '';
 
         CATALOG.forEach(({id,name,price,img}) => { //Перебираем элементы из catalog.js + деструктуризация через {}
@@ -7,17 +7,19 @@ class Products {
             // console.log(element.id); //Получение доступа через точку
 
             htmlCatalog += ` 
-                <li>
-                    <span>${name}</span>
-                    <img src="${img}" />
-                    <span>${price}</span>
-                    <button>Добавить в корзину</button>
+                <li class="producs-element">
+                    <span class="producs-element__name">${name}</span>
+                    <img class="producs-element__img" src="${img}" />
+                    <span class="producs-element__price">
+                        💍 ${price.toLocaleString()} Руб
+                    </span>
+                    <button class="producs-element__btn">Добавить в корзину</button>
                 </li>
             `; //Добавление элементов li в HTML
         });
 
         const html = `
-            <ul>
+            <ul class="producs-container">
                 ${htmlCatalog}
             </ul>        
         `; //Добавление элементов ul в HTML
