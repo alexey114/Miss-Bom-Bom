@@ -16,6 +16,8 @@ class Products {
             element.classList.remove(this.classNameActive);
             element.innerHTML = this.labelAdd;
         }
+
+        headerPage.render(products.length); //отображение кол-ва элементов в корзине
     }
 
     render() { //Метод render отображает данные на странице
