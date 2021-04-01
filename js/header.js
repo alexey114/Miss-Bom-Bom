@@ -17,6 +17,6 @@ class Header {
 
 const headerPage = new Header (); //экземпляр класса
 
-const productsStore = localStorageUtil.getProducts(); //для отображения кол-ва вызываем экземплял класса и метод + заключаем в переменную
-headerPage.render(productsStore.length); //вызов метода render + отображение кол-ва выбранных товаров (длинну массива))
+// const productsStore = localStorageUtil.getProducts(); //для отображения кол-ва вызываем экземплял класса и метод + заключаем в переменную
+// headerPage.render(productsStore.length); //вызов метода render + отображение кол-ва выбранных товаров (длинну массива))
 

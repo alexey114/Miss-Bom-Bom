@@ -62,4 +62,4 @@ class Products {
 };
 
 const productsPage = new Products(); //создание экземпляра
-productsPage.render();//вызов метода render
+// productsPage.render();//вызов метода render
