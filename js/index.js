@@ -18,7 +18,8 @@ fetch('server/catalog.json') //не поддерживает IE
         render();
     })
     .catch(error => {
-        console.log(error);
+        spinnerPage.handleClear();
+        errorPage.render();
     });
 
 
