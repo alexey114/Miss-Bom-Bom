@@ -6,12 +6,15 @@ function render() {
     productsPage.render();//вызов метода render
 }
 
+spinnerPage.render();
+
 let CATALOG = [];
 
 fetch('server/catalog.json') //не поддерживает IE
     .then(res => res.json())    
     .then(body => {
         CATALOG = body;
+        spinnerPage.handleClear();
         render();
     })
     .catch(error => {
