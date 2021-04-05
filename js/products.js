@@ -10,11 +10,11 @@ class Products {
         const {pushProduct, products} = localStorageUtil.putProducts(id);
         
         if (pushProduct) {
-            element.classList.add(this.classNameActive);
-            element.innerHTML = this.labelRemove;
+            element.classList.add(this.classNameActive); //присваиваем стили кнопки producs-element__btn_active
+            element.innerHTML = this.labelRemove; //меняем содержимое кнопки на 'Удалить из корзины'
         } else {
-            element.classList.remove(this.classNameActive);
-            element.innerHTML = this.labelAdd;
+            element.classList.remove(this.classNameActive); //удаляем стили кнопки producs-element__btn_active
+            element.innerHTML = this.labelAdd; //меняем содержимое кнопки на 'Добавить в корзину'
         }
 
         headerPage.render(products.length); //отображение кол-ва элементов в корзине
@@ -28,13 +28,13 @@ class Products {
             //console.log(id, name, price, img); //В итоге вывод будет отдельными переменными
             // console.log(element.id); //Получение доступа через точку
             
-            let activeClass = '';
-            let activeText = '';
-            if (productsStore.indexOf(id) === -1) {
+            let activeClass = '';   //создаем пустую переменную
+            let activeText = '';    //создаем пустую переменную
+            if (productsStore.indexOf(id) === -1) { //если в массиве пусто отображать Добавить в корзину
                 activeText = this.labelAdd;
-            } else {
-                activeClass = ' '+this.classNameActive;
-                activeText = this.labelRemove;
+            } else { //иначе
+                activeClass = ' '+this.classNameActive; //применять стили producs-element__btn_active
+                activeText = this.labelRemove; // выводить Удалить из корзины
             }
 
             htmlCatalog += ` 
@@ -57,7 +57,7 @@ class Products {
             </ul>        
         `; //Добавление элементов ul в HTML
         
-        ROOT_PRODUCTS.innerHTML = html;
+        ROOT_PRODUCTS.innerHTML = html; //значение innerHTML удаляет всё содержимое элемента и заменяет его на узлы, которые были разобраны как HTML, указанными в строке html
     };
 };
 

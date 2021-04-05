@@ -10,13 +10,13 @@ class Header {
                 </span>
         `;
 
-        ROOT_HEADER.innerHTML = html;
+        ROOT_HEADER.innerHTML = html; //значение innerHTML удаляет всё содержимое элемента и заменяет его на узлы, которые были разобраны как HTML, указанными в строке html
     }
     
 };
 
 const headerPage = new Header (); //экземпляр класса
 
-// const productsStore = localStorageUtil.getProducts(); //для отображения кол-ва вызываем экземплял класса и метод + заключаем в переменную
+// const productsStore = localStorageUtil.getProducts(); //заключаем в переменную для отображения кол-ва вызываем экземплял класса и метод
 // headerPage.render(productsStore.length); //вызов метода render + отображение кол-ва выбранных товаров (длинну массива))
 

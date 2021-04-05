@@ -10,7 +10,7 @@ class Error {
             </div>
         `;
 
-        ROOT_ERROR.innerHTML = html;
+        ROOT_ERROR.innerHTML = html; //значение innerHTML удаляет всё содержимое элемента и заменяет его на узлы, которые были разобраны как HTML, указанными в строке html
     }
 }
 
