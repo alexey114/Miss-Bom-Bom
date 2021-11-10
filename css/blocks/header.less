@@ -34,7 +34,25 @@
 
     @media @mobile{
         display: none;
+
+        &.show{
+            display: block;
+            order: 1;
+            position: absolute;
+            top: 50px;
+            left: 40%;
+        }
     }
+}
+
+.nav__link_mobile{
+    
+    @media @mobile {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }
+
 }
 
 .header-basket{
@@ -189,4 +207,8 @@ text-decoration: none;
         flex-basis: 100%;
         text-align: center;
     }
+}
+
+.shopping-container{
+    margin-top: 500px;
 }

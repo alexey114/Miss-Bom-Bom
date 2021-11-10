@@ -22,7 +22,7 @@ class Shopping {
         });
 
         const html = `
-            <div class="shopping-container">
+            <div class="shopping-container" style="margin-top: 4.5rem">
                 <div class="shopping__close" onclick="shoppingPage.handleClear ()"></div>
                 <table>
                     ${htmlCatalog}
