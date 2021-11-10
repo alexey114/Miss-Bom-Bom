@@ -22,13 +22,21 @@
     flex-basis: 25%;
     text-align: center;
 
-    @media @mobile{
-        flex-basis: 50%;
-    }
-
-    @media @mobile-sm{
+    @media @tablet{
         flex-basis: 100%;
         padding-bottom: 1rem;
+    }
+
+}
+
+.icons_social{
+
+    display: flex;
+
+    @media @tablet {
+        
+        justify-content: center;
+        flex-basis: 100%;
     }
 }
 
@@ -37,7 +45,10 @@
     width: 25px;
     height: 25px;
     padding: 2px;
+
+    
 }
+
 
 
 .footer_copyright{
