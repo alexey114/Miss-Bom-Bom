@@ -173,7 +173,12 @@ text-decoration: none;
 
 .about_me-header h1{
     text-align: center;
-    margin: 50px; 
+    margin: 50px;
+
+    @media @mobile {
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
 }
 
 .about_me-items{
@@ -211,4 +216,12 @@ text-decoration: none;
 
 .shopping-container{
     margin-top: 500px;
+}
+
+//Range
+
+.header_about-me-range{
+    @media @mobile {
+    margin-bottom: 100px;
+    }
 }
